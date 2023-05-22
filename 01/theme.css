@@ -1,0 +1,137 @@
+body {
+  font-family: sans-serif;
+  font-size: 0.72rem;
+  font-weight: 300;
+}
+
+.gui {
+  display: none;
+  background-color: rgba(255, 255, 255, 0.75);
+  box-shadow: 8px 8px rgba(1, 1, 1, 0.1);
+  width: auto;
+  height: auto;
+  border: 1px solid black;
+  padding: 1rem;
+}
+
+.slider-container,
+.color-picker-container {
+  align-items: center;
+  display: flex;
+  margin: 8px 0px;
+  width: auto;
+}
+
+.color-picker {
+  width: 50px;
+  height: 50px;
+}
+
+.gui-label {
+  padding: 0px;
+  text-transform: none;
+  letter-spacing: 0.1em;
+  margin-right: 8px;
+  width: 100px;
+}
+
+.shape-selector {
+  border: 1px solid black;
+  padding: 8px;
+  appearance: auto;
+}
+
+.gui-button {
+  padding: 4px 8px;
+  border: 1px solid black;
+  margin-right: 4px;
+}
+
+.gui-button:hover {
+  color: #fff;
+  background-color: #111;
+}
+
+.destructive {
+  color: red;
+  border: 1px solid red;
+}
+
+.destructive:hover {
+  color: white;
+  background-color: red;
+}
+
+/* Range Input Styles */
+
+input[type="range"] {
+  -webkit-appearance: none;
+  appearance: none;
+  background: transparent;
+  cursor: pointer;
+  width: 100px;
+}
+
+input[type="range"]:focus {
+  outline: none;
+}
+
+input[type="range"]::-webkit-slider-runnable-track {
+  background-color: #eee3f3;
+  border: 1px solid #23122b;
+  border-radius: 0;
+  height: 1rem;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  margin-top: -1px;
+  background-color: #80449c;
+  border: 1px solid #23122b;
+  height: 1rem;
+  width: 1rem;
+}
+
+input[type="range"]:focus::-webkit-slider-thumb {
+  border: 1px solid #23122b;
+  outline: 1px solid #23122b;
+  outline-offset: 0.05rem;
+}
+
+/* Firefox styles */
+
+input[type="range"]::-moz-range-track {
+  background-color: #eee3f3;
+  border: 1px solid #23122b;
+  border-radius: 0rem;
+  height: 0.5rem;
+}
+
+input[type="range"]::-moz-range-thumb {
+  border: none;
+  border-radius: 0;
+  background-color: #80449c;
+  border: 1px solid #23122b;
+  height: 1rem;
+  width: 1rem;
+}
+
+input[type="range"]:focus::-moz-range-thumb {
+  border: 1px solid #053a5f;
+  outline: 3px solid #053a5f;
+  outline-offset: 0.125rem;
+}
+
+/* Color Picker Styles */
+
+input[type="color" i] {
+  appearance: auto;
+  width: 100px;
+  height: 1.5rem;
+  cursor: default;
+  box-sizing: border-box;
+  background-color: buttonface;
+  border: 1px solid #053a5f;
+  padding: 1px 2px;
+}
